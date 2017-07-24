@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta:edge></meta:edge>
+    <title>Portfolio | Bellingham Websites | Brian Lee</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+    body,html,.main-content, .portfolio, .content-wrapper{
+        height:100%;
+    }
+
+    .navigation-arrow.left, .navigation-arrow.right, .navigation-arrow.bottom {
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 50%;
+    margin-left: -36px;
+    bottom: 14px;
+    width: 72px;
+    height: 36px;
+    -webkit-transition: 0.4s visibility ease-out, -webkit-transform 300ms ease;
+    transition: 0.4s visibility ease-out, transform 300ms ease;
+}
+
+ .navigation-arrow.top {
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 50%;
+    margin-left: -36px;
+    top: 54px;
+    width: 72px;
+    height: 36px;
+    -webkit-transition: 0.4s visibility ease-out, -webkit-transform 300ms ease;
+    transition: 0.4s visibility ease-out, transform 300ms ease;
+}
+.no-isphone .navigation-black-arrows .navigation-arrow.bottom .icon {
+    background-position: -85px 0;
+}
+
+ .navigation-arrow .icon {
+    position: absolute;
+    left: 17px;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-size: 169px 64px;
+    background-image: url(img/sprites.png);
+    background-position: -85px 0;
+    width: 38px;
+    opacity: 0.5;
+    height: 22px;
+    -webkit-animation: move 1.2s infinite 0.4s alternate;
+    animation: move 1.2s infinite 0.4s alternate;
+}
+ .not-animating .navigation-arrow{
+    opacity:1;
+          -webkit-transition: 0.4s opacity ease-out ;
+        transition: 0.4s opacity ease-out ;
+    }
+.animating .navigation-arrow{
+    opacity: 0;
+  -webkit-transition: 0.4s opacity ease-out ;
+    transition: 0.4s opacity ease-out ;
+}
+ .navigation-arrow.top .icon {
+   transform: rotateZ(180deg);
+    -webkit-animation: moveTop 1.2s infinite 0.4s alternate;
+    animation: moveTop 1.2s infinite 0.4s alternate;
+}
+.firstSlide .navigation-arrow.top{
+    opacity: 0;
+}
+.lastSlide .navigation-arrow.bottom{
+    opacity: 0;
+}
+@-webkit-keyframes moveTop {
+  from {
+    -webkit-transform: translateY(10px) rotateZ(180deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+  to {
+    -webkit-transform: translateY(0) rotateZ(180deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+@keyframes moveTop {
+  from {
+    transform: translateY(10px) rotateZ(180deg);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(0) rotateZ(180deg);
+    animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateY(0);
+    -webkit-animation-timing-function: ease-in;
+  }
+  to {
+    -webkit-transform: translateY(10px);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+@keyframes move {
+  from {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(10px);
+    animation-timing-function: ease-out;
+  }
+}
+html,
+    body{    background: #000;
+overflow: hidden;
+position: relative;
+    height: 100%;
+}
+.portfolio{
+        -webkit-transition: all 1.75s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.75s cubic-bezier(0.19, 1, 0.22, 1);
+    transform:translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
+}
+.showcase
+{
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: relative;
+    overflow: hidden;
+        transform:translateZ(0);
+    width: 100%;
+      backface-visibility: hidden;
+}
+
+header{
+    height:0;
+}
+.nexus{
+    background: #f7faff  url(img/nexus-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.jedenfalls{
+    background: #f7faff  url(img/jedenfalls-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.smokeshop{
+    background: #f7faff  url(img/smokeshop-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.golden{
+background: #f7faff  url(img/golden-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.frequency{
+background: #f7faff  url(img/frequency-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.kazillian{
+background: #f7faff  url(img/kazillian-showcase.jpg) no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+.thriller{
+background: #f7faff  url(img/thriller-showcase.jpg) no-repeat;
+    background-position: right 50px;
+    background-size: contain;
+}
+.healing-hearts{
+background: #f7faff  url(img/healing-hearts-showcase.jpg) no-repeat;
+    background-position: right 50px;
+    background-size: contain;
+}
+.xtreme{
+background: #f7faff  url(img/xtreme-showcase.jpg) no-repeat;
+    background-position: right 50px;
+    background-size: contain;
+}
+
+@media (max-width: 767px){
+    .nexus,
+.jedenfalls,
+.smokeshop,
+.golden,
+.frequency,
+.kazillian,
+.thriller,
+.healing-hearts,
+.xtreme{
+    background-color: #fff !important;
+}
+}
+
+
+.active .item-info{
+ opacity: 1;
+    transform: translateX(0);
+     -webkit-transition: all 1.75s 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.75s 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.item-info .showcase-title{
+    display:block;
+    line-height: normal;
+}
+.item-info em{
+    display:block;
+    font-size: 18px;
+     color:#999;
+}
+.showcase-copy {
+    font-size: 18px;
+    line-height: 35px;
+    display: block;
+}
+.item-info sup{
+    font-size: 21px;
+    color:#999;
+    top:-15px;
+    display: inline-block;
+    }
+
+    @media (max-width: 767px){
+        .item-info{
+            top:55%;
+        }
+    }
+    </style>
+
+
+</head>
+<body id="work">
+    <div class="hire-overlay ">
+        <div class="bg"></div>
+        <a href="" class="close-btn">&times;</a>
+        <div class="hire-form">
+
+            <h2 class="section-title">Hire Me/Get a Quote</h2>
+            <form class="hire-form-form">
+                <div class="form-group col-xs-12">
+                    <select class="budget" name="budget">
+                        <option value="" selected disabled>Budget...</option>
+                        <option value="$10000 or less">$10,000 or less</option>
+                        <option value="$10000 - $25,000">$10,000 - $25,000</option>
+                        <option value="$25000 - $50,000">$25,000 - $50,000</option>
+                        <option value="$50,000+">$50,000+</option>
+                    </select>
+                    <label class="control-label" for="select">Budget</label><i class="bar"></i>
+                </div>
+                <div class="form-group col-xs-12 col-md-6">
+                    <input type="text" name="name" class="name" required="required">
+                    <label class="control-label" for="input">Name</label>
+                    <i class="bar"></i>
+                </div>
+                <div class="form-group col-xs-12 col-md-6">
+                    <input type="text" name="_replyto" class="email" required="required">
+                    <label class="control-label" for="input">Email</label><i class="bar"></i>
+                </div>
+                <div class="form-group  col-xs-12">
+                    <textarea required="required" name="message" class="message"></textarea>
+                    <label class="control-label" for="textarea">How Can I Help You?</label><i class="bar"></i>
+                </div>
+                <a href="" class="btn send-btn">Send</a>
+              </form>
+          </div>
+    </div>
+
+    <div class="hamburger hamburger--elastic js-hamburger ">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+    <ul class="mobile-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about-me">About Me</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a class="current" href="work" disabled>Recent Work</a></li>
+        <li class="hire-me"><a class="hire-nav" href=""><span>Hire Me</span></a></li>
+        <li class="phone-num">702 338-9458</li>
+    </ul>
+     <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 nav-bar page-nav">
+                    <div class="scrolled top-nav ">
+                        <div class="container-fluid">
+                            <a href="/"><img src="img/b-logo-no-sub.png" alt="" class="logo img-responsive"></a>
+
+                            <ul class="menu">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/#about-me">About Me</a></li>
+                                <li><a href="/#services">Services</a></li>
+                                <li><a class="current" href="#">Recent Work</a></li>
+                                <li class="hire-me"><a class="hire-nav" href=""><span>Hire Me</span></a></li>
+                                <li class="phone-num">702 338-9458</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+    <section class="main-content firstSlide">
+    <div class="navigation-arrow top">
+            <div class="icon sprite"></div>
+        </div>
+        <div class="navigation-arrow bottom">
+            <div class="icon sprite"></div>
+        </div>
+     <div class="no-padding portfolio">
+
+                <div class="showcase healing-hearts active" >
+                    <div class="item-info">
+                        <span class="showcase-title">Healing Hearts<sup>&trade;</sup></span>
+                        <em>eCommerce Web Development | Logo Design</em>
+                        <span class="showcase-copy">
+                            Healing Hearts prides themselves on being a boutique artisan supplier of natural products.
+                            Using a minimalist design and earthy colors, the website focuses on what matters&mdash;the products.
+
+                        </span>
+                    </div>
+                </div>
+            <div class="showcase xtreme" >
+
+
+                <div class="item-info">
+                        <span class="item-info-title">Xtreme Financial Services Inc.</span>
+
+                         <em>Web Developement | Logo Design</em>
+                        <span class="showcase-copy">
+                            I designed the logo to convey trust and quality. The web design
+                            was informed by the simplicity of the logo. Trust is important
+                            in the financing business, so it was important here to capture
+                            a professional and clean look that evoked a sense of professionalism.
+                        </span>
+
+                </div>
+
+                </div>
+                <div class="showcase nexus" >
+                    <div class="item-info">
+                        <span class="showcase-title">Nexus Courier Group</span>
+                        <em>Mobile App | Logo Design</em>
+                        <span class="showcase-copy">
+                            Nexus wanted to take the courier business from paper to digital. I developed
+                            an app that tracked packages, drivers, and accepted orders from clients. The E
+                            in the logo design is an envelope to represent the package delivery.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase jedenfalls" >
+                    <div class="item-info">
+                        <span class="showcase-title">Jedenfalls</span>
+                        <em>Logo Design</em>
+                        <span class="showcase-copy">
+                            Jedenfalls is a steam-punk themed gift shop in a small town that thrives on tourism.
+                            The logo design was made to playfully fit the company theme.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase smokeshop" >
+                    <div class="item-info">
+                        <span class="showcase-title">Up In Smoke</span>
+                        <em>Logo Design</em>
+                        <span class="showcase-copy">
+                            Up In Smoke is a smoke and gift shop in a Bavarian-themed town. The logo had to
+                            fit the city regulations. The Bavarian font is accented with an S that appears
+                            to be the smoke leaving a pipe.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase golden" >
+                    <div class="item-info">
+                        <span class="showcase-title">Golden Artists</span>
+                        <em>Website | Logo Design | Logo Animation</em>
+                        <span class="showcase-copy">
+                            Golden Artists Entertainment is a one-stop-shop for all things entertainment. I
+                            developed a logo, a logo animation for movies and TV, and a website to showcase
+                            their many clients.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase kazillian" >
+                    <div class="item-info">
+                        <span class="showcase-title">Kazillian Crowd Sales</span>
+                        <em>Website | Logo Design</em>
+                        <span class="showcase-copy">
+                            Kazillian is a crowd-sourcing social network that is still in development. I designed the logo
+                            with the letter I appearing in a shirt and tie. The website is built around a custom search
+                            engine.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase frequency" >
+                    <div class="item-info">
+                        <span class="showcase-title">Frequency Entertainment</span>
+                        <em>Website | Logo Design</em>
+                        <span class="showcase-copy">
+                            Frequency Entertainment is one of the top entertainment management companies in Las Vegas.
+                            I designed a logo and a website to match. The site features a custom filtering function to
+                            allow clients to find the entertainment they need with ease.
+                        </span>
+                    </div>
+                </div>
+                <div class="showcase thriller" >
+                    <div class="item-info">
+                        <span class="showcase-title">Thriller Films</span>
+                        <em>Logo Design | Logo Animation</em>
+                        <span class="showcase-copy">
+                            Thriller films wanted a logo and movie animation that evoked that edge-of-your-seat feeling
+                            that comes with horror movies. With cascading walls zooming around torch-lit silhouette, I
+                            delivered a finished product that is both thrilling and iconic.
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    </div>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91574636-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/global.js"></script>
+
+    <script>
+            var scrollHeight = $(window).outerHeight();
+            var scrolling = false;
+            var scrollPos = 0;
+            var slideCount = $('.showcase').length;
+            var currentSlide = 0;
+            window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+            }
+
+           $(window).resize(function(){
+                scrollHeight = $(window).outerHeight();
+                var scrollTo = currentSlide * scrollHeight;
+                $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+           });
+
+           $(document).on('wheel', function(e){
+                var scrollTo = 0;
+
+                if(!scrolling){
+                    scrolling = true;
+                    $('.main-content').addClass('animating').removeClass('not-animating');
+
+                    if(e.originalEvent.deltaY > 0 && currentSlide < slideCount - 1){
+                        currentSlide++;
+                    }else if(e.originalEvent.deltaY < 0 && currentSlide > 0){
+                        currentSlide--;
+                    }else if(e.originalEvent.deltaY > 0){
+                        currentSlide = 0;
+                    }else {
+                         currentSlide = slideCount - 1;
+                    }
+
+                    scrollPos = scrollTo = currentSlide * scrollHeight;
+
+                    $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+                    $($('.showcase').removeClass('active').get(currentSlide)).addClass('active');
+                    if(currentSlide === 0){
+                        $('.main-content').removeClass('lastSlide').addClass('firstSlide');
+                    }else if(currentSlide === slideCount - 1){
+                        $('.main-content').addClass('lastSlide').removeClass('firstSlide');
+                    }else{
+                        $('.main-content').removeClass('lastSlide').removeClass('firstSlide');
+                    }
+                    setTimeout(function(){
+                        $('.main-content').removeClass('animating').addClass('not-animating');
+
+                        scrolling = false;
+                    }, 1750)
+                }
+           });
+            $(window).keydown(function(e){
+                if(e.which === 40 || e.which === 32 || e.which === 13 || e.which === 38)
+                    e.preventDefault();
+
+                var scrollTo = 0;
+
+                if(!scrolling){
+                    scrolling = true;
+                    $('.main-content').addClass('animating').removeClass('not-animating');
+
+                    if((e.which === 40 || e.which === 32 || e.which === 13) && currentSlide < slideCount - 1){
+                        currentSlide++;
+                    }else if(e.which === 38 && currentSlide > 0){
+                        currentSlide--;
+                    }else if(e.which === 40 || e.which === 32 || e.which === 13){
+                        currentSlide = 0;
+                    }else if(e.which === 38){
+                        currentSlide = slideCount - 1;
+                    }
+
+                    scrollPos = scrollTo = currentSlide * scrollHeight;
+                     if(currentSlide === 0){
+                        $('.main-content').removeClass('lastSlide').addClass('firstSlide');
+                    }else if(currentSlide === slideCount - 1){
+                        $('.main-content').addClass('lastSlide').removeClass('firstSlide');
+                    }else{
+                        $('.main-content').removeClass('lastSlide').removeClass('firstSlide');
+                    }
+                    $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+                         $($('.showcase').removeClass('active').get(currentSlide)).addClass('active');
+                    setTimeout(function(){
+                        $('.main-content').removeClass('animating').addClass('not-animating');
+                        scrolling = false;
+                    }, 1750)
+                }
+           });
+
+           $('.portfolio').on('click', function(e){
+                var scrollTo = 0;
+
+                if(!scrolling){
+                    scrolling = true;
+                    $('.main-content').addClass('animating').removeClass('not-animating');
+
+                    if(currentSlide < slideCount - 1){
+                        currentSlide++;
+                    } else {
+                        currentSlide = 0;
+                    }
+
+                    scrollPos = scrollTo = currentSlide * scrollHeight;
+                     if(currentSlide === 0){
+                        $('.main-content').removeClass('lastSlide').addClass('firstSlide');
+                    }else if(currentSlide === slideCount - 1){
+                        $('.main-content').addClass('lastSlide').removeClass('firstSlide');
+                    }else{
+                        $('.main-content').removeClass('lastSlide').removeClass('firstSlide');
+                    }
+                    $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+                         $($('.showcase').removeClass('active').get(currentSlide)).addClass('active');
+                    setTimeout(function(){
+                        $('.main-content').removeClass('animating').addClass('not-animating');
+                        scrolling = false;
+                    }, 1750)
+                }
+           });
+
+
+           $('.navigation-arrow.bottom').on('click', function(e){
+                var scrollTo = 0;
+
+                if(!scrolling){
+                    scrolling = true;
+                    $('.main-content').addClass('animating').removeClass('not-animating');
+
+                    if(currentSlide < slideCount - 1){
+                        currentSlide++;
+                    } else {
+                        currentSlide = 0;
+                    }
+
+                    scrollPos = scrollTo = currentSlide * scrollHeight;
+
+                    if(currentSlide === 0){
+                        $('.main-content').removeClass('lastSlide').addClass('firstSlide');
+                    }else if(currentSlide === slideCount - 1){
+                        $('.main-content').addClass('lastSlide').removeClass('firstSlide');
+                    }else{
+                        $('.main-content').removeClass('lastSlide').removeClass('firstSlide');
+                    }
+
+                    $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+                    $($('.showcase').removeClass('active').get(currentSlide)).addClass('active');
+
+                    setTimeout(function(){
+                        $('.main-content').removeClass('animating').addClass('not-animating');
+                        scrolling = false;
+                    }, 1750)
+                }
+           });
+
+
+           $('.navigation-arrow.top').on('click', function(e){
+                var scrollTo = 0;
+
+                if(!scrolling){
+                    scrolling = true;
+                    $('.main-content').addClass('animating').removeClass('not-animating');
+
+                    if(currentSlide > 0){
+                        currentSlide--;
+                    } else {
+                        currentSlide = slideCount-1;
+                    }
+
+                    scrollPos = scrollTo = currentSlide * scrollHeight;
+
+                    if(currentSlide === 0){
+                        $('.main-content').removeClass('lastSlide').addClass('firstSlide');
+                    }else if(currentSlide === slideCount - 1){
+                        $('.main-content').addClass('lastSlide').removeClass('firstSlide');
+                    }else{
+                        $('.main-content').removeClass('lastSlide').removeClass('firstSlide');
+                    }
+
+                    $('.portfolio').css({transform: 'translateY(' + -scrollTo + 'px)'})
+                         $($('.showcase').removeClass('active').get(currentSlide)).addClass('active');
+                    setTimeout(function(){
+                        $('.main-content').removeClass('animating').addClass('not-animating');
+                        scrolling = false;
+                    }, 1750)
+                }
+           });
+    </script>
+</body>
+</html>

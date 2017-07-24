@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta:edge></meta:edge>
+    <title>Bellingham Mobile App Development Design</title>
+    <meta name="description" content="Bellingham Websites is the best in Bellingham Mobile App Development. Call now for your Mobile App! (702) 338-9458.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+    body{
+
+    .phone_1.active {
+    }
+           -webkit-animation: phone_img 3s linear;
+    animation: phone_img 3s linear;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+.line-art-container{
+  max-width:200px;
+}
+
+
+#svg-phone_1{
+    display: block;
+    max-width: 100%;
+    float: right;
+    margin-left: 15px;
+}
+#svg-phone_1 path {
+    stroke-dasharray: 1570;
+    stroke-dashoffset: 1570;
+    stroke: #252525;
+    stroke-width: 2px;
+}
+#svg-phone_1.active path {
+    animation: phone 3s ease-in-out alternate;
+    -webkit-animation: phone 3s ease-in-out alternate;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#svg-phone_1 path#rnd1 {
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
+
+}
+
+#svg-phone_1.active path#rnd1 {
+    animation: svg_rnd 3s ease-in-out alternate;
+    -webkit-animation: svg_rnd 3s ease-in-out alternate;
+     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+#svg-phone_1.active path#screen {
+    animation: screen 3s ease-in-out alternate;
+    -webkit-animation: screen 3s ease-in-out alternate;
+     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes phone {
+  0% {
+    stroke-dashoffset: 1570;
+  }
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes phone {
+  0% {
+    stroke-dashoffset: 1570;
+  }
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes svg_rnd {
+  0% {
+    stroke-dashoffset: 370;
+  }
+  40% {
+    stroke-dashoffset: 370;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes svg_rnd {
+  0% {
+    stroke-dashoffset: 370;
+  }
+  40% {
+    stroke-dashoffset: 370;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+.platforms{
+
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 15px;
+    bottom:0;
+    margin: 15px auto;
+}
+.platforms > div {
+    width: 33.3333333%;
+    float: left;
+    padding: 0 0 0 0;
+}
+.step-main-content{
+    position: relative;
+}
+.platforms >div>img {
+    width: 55%;
+    max-width: 40px
+}
+.platforms > div:nth-child(2) img{
+    margin:0 auto;
+}
+.platforms > div:last-child{
+    padding-right:0 ;
+}
+.platforms > div:last-child img{
+   float:right;
+}
+.step-main-content {
+
+    padding: 15px ;
+}
+
+    </style>
+
+</head>
+
+<body id="apps">
+   <div class="hire-overlay ">
+        <div class="bg"></div>
+        <a href="" class="close-btn">&times;</a>
+        <div class="hire-form">
+
+            <h2 class="section-title">Hire Me/Get a Quote</h2>
+            <form class="hire-form-form">
+                <div class="form-group col-xs-12">
+                    <select class="budget" name="budget">
+                        <option value="" selected disabled>Budget...</option>
+                        <option value="$10000 or less">$10,000 or less</option>
+                        <option value="$10000 - $25,000">$10,000 - $25,000</option>
+                        <option value="$25000 - $50,000">$25,000 - $50,000</option>
+                        <option value="$50,000+">$50,000+</option>
+                    </select>
+                    <label class="control-label" for="select">Budget</label><i class="bar"></i>
+                </div>
+                <div class="form-group col-xs-12 col-md-6">
+                    <input type="text" name="name" class="name" required="required">
+                    <label class="control-label" for="input">Name</label>
+                    <i class="bar"></i>
+                </div>
+                <div class="form-group col-xs-12 col-md-6">
+                    <input type="text" name="_replyto" class="email" required="required">
+                    <label class="control-label" for="input">Email</label><i class="bar"></i>
+                </div>
+                <div class="form-group  col-xs-12">
+                    <textarea required="required" name="message" class="message"></textarea>
+                    <label class="control-label" for="textarea">How Can I Help You?</label><i class="bar"></i>
+                </div>
+                <a href="" class="btn send-btn">Send</a>
+              </form>
+          </div>
+    </div>
+
+    <div class="hamburger hamburger--elastic js-hamburger ">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+    <ul class="mobile-menu">
+    <li><a href="/">Home</a></li>
+        <li><a href="/#about-me">About Me</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="work">Recent Work</a></li>
+        <li class="hire-me"><a class="hire-nav" href=""><span>Hire Me</span></a></li>
+        <li class="phone-num">702 338-9458</li>
+    </ul>
+
+
+
+
+    <header class="col-xs-12 nav-bar">
+        <div class="top-nav">
+            <div class="container-fluid">
+                <a href="/"><img src="img/b-logo-no-sub.png" alt="Bellingham Websites Header Logo" class="logo img-responsive"></a>
+                <ul class="menu">
+                <li><a href="/">Home</a></li>
+                    <li><a href="/#about-me">About Me</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="work">Recent Work</a></li>
+                    <li class="hire-me"><a class="hire-nav" href=""><span>Hire Me</span></a></li>
+                    <li class="phone-num">702 338-9458</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="col-md-4 col-xs-12 static-content">
+                         <h3 class="section-heading"><strong>Engaging</strong> Bellingham Mobile Apps</h3>
+                            <p>Build custom cross-platform applications (iOS, Android, Windows Phone)
+                               to connect with your customers or streamline internal business operations. Your
+                               mobile app will be intuitive, engaging, and visually stunning. The highest quality in Bellingham mobile apps.
+                               I'll work with you to build a solution that suits the needs of your company while
+                               building upon its personality. Take your digital relationship with customers to the
+                               next level with push-notifications and GPS functionality.</p>
+                            </div>
+    <div class="content-wrapper">
+        <section class="page-heading">
+            <div style="perspective:1000px;" class="clearfix">
+                <div class="page-header-content">
+                    <h1 class="apps">Bellingham Mobile <span>Apps</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="container-fluid">
+                <div class="row full-row apps-features-row">
+                    <div class="col-xs-12 apps-intro">
+                        <p style="margin: 0 !important;">
+                           <h3 style="margin: 0 0 10px"> <strong>Bellingham Mobile Apps</strong> Connect to your Users</h3>
+                            From mobile games to enterprise level eCommerce platforms, I offer the cutting edge
+                            in mobile app features. Apps are available for any or all of the major mobile
+                            operating systems.
+                        </p>
+                        <div class="platforms clearfix">
+                        <div class="windows">
+                            <img class="img-responsive" src="img/windows-logo.png" alt="Mobile Apps with Windows Compatibility Available">
+                         </div>
+                        <div class="android">
+
+                            <img class="img-responsive" src="img/android-logo.png" alt="Android Mobile Apps Available">
+                        </div>
+                        <div class="apple">
+
+                            <img class="img-responsive" src="img/apple-logo.png" alt="iOS Apps Come as a Standard and as Part of Xamarin and Hybrid Packages">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="app-features-info">
+                    <div class="col-sm-3 col-xs-12 ">
+                        <div class="app-features ios">
+
+                        <h3 class="app-features-title">iOS App Development</h3>
+                        <div class="app-features-icon"><i class="fa fa-apple" aria-hidden="true"></i></div>
+                        <ul>
+                            <li><span>API Integration</span></li>
+                            <li><span>iBeacon &amp; BLE Device Integration</span></li>
+                            <li><span>Keychain &amp; Touch ID Security</span></li>
+                            <li><span>Analytics</span></li>
+                            <li><span>Location Services</span></li>
+                            <li><span>Payment Gateways</span></li>
+                            <li><span>Audio/Video Streaming</span></li>
+                            <li><span>Apple Watch Compatibility</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="app-features android">
+                        <h3 class="app-features-title">Android App Development</h3>
+                          <div class="app-features-icon"><i class="fa fa-android" aria-hidden="true"></i></div>
+                        <ul>
+                            <li><span>Material Design</span></li>
+                            <li><span>Security</span></li>
+                            <li><span>API Integration</span></li>
+                            <li><span>Location based services</span></li>
+                            <li><span>Analytics</span></li>
+                            <li><span>Payment gateways</span></li>
+                            <li><span>NFC</span></li>
+                            <li><span>Android Wear Compatibility</span></li>
+
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="app-features xamarin">
+                        <h3 class="app-features-title">Xamarin App Development</h3>
+                          <div class="app-features-icon"><i class="fa fa-xamarin" aria-hidden="true"></i></div>
+                        <ul>
+                            <li><span>Cross-platform Mobile Apps</span></li>
+                            <li><span>Native Apps</span></li>
+                            <li><span>Forms with up to 90% shared code</span></li>
+                            <li><span>Client-server applications</span></li>
+                            <li><span>API Integration</span></li>
+                            <li><span>iBeacon &amp; BLE Device Integration</span></li>
+                            <li><span>Analytics</span></li>
+                            <li><span>Payment gateways</li>      </span>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="app-features hybrid">
+                            <h3 class="app-features-title">Hybrid App Development</h3>
+                              <div class="app-features-icon"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></div>
+                            <ul>
+                            <li><span>Cross-platform Mobile Apps</span></li>
+                            <li><span>Progressive Web Apps</span></li>
+                            <li><span>Real-time Data Sync via WebSockets</span></li>
+                            <li><span>Angular 2</span></li>
+                            <li><span>React</span></li>
+                            <li><span>Proof of Concept Applications</span></li>
+                            <li><span>Fast and Reliable backend</span></li>
+                            <li><span>IoT</span></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="line-art-container">
+                        <!-- <svg id="svg-phone_1" version="1.1" viewBox="0 0 282 540" class="active">
+                            <path id="phone" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M 183, 1c 18.665,0,29.335,0,44,0 c 21.595, -0.146,30.235,5.71,39,22c 1, 0.667,2,1.333,3,5c 4.243,11.06,4,37.589,4,60c 0,44.996,0,60.004,3,55 c 0,0,3,0,3,1c 0,10,0,22,0,48c 0,1,-3,1,-4,1 c 0,73.326,0,146.674,0,250c 0,18.998,0,38.002,0,46c 0,12.022,0.526,22.817-4,30c -11.989,19.022-32.434,17-63,17c -39.33,0-78.67,0-118,0c -17.998,0-36.002,0-52,0c -15.333-0.333-12.667-4.667-16-3c -2.538-1.92-12.781-16.644-14-27c 0-1.667,0-3.333,0-5c -3.723-13.422-1-38.227-1-54c 0-55.995,0-112.005,0-168c 0-10.33,0-20.67,0-51 c 0,-6.666,0,-13.334,0,-20c -0.667,0,-1.333,0,-2,0 c 0,-12,0,18,0-34c 0.667,-0.333,1.333,-0.667,2-1c 0-9.666,0-4.334,0-8c-0.667,0-1.333,0-2,0c 0-12,0-18,0-34c 0.667,0,1.333,0,2,0c 0-1.667,0-3.333,0-5c 0-8.666,0-17.334,0-26 c -0.667,0,-1.333,0-2,0c 0-8.666,0-17.334,0-18c 0.667,0,1.333,0,2,0 c 0-4.666,0-9.334,0-48c 2.542,-8.685,7.445,-18.225,14,-23C 32.223,2,49.231,1,75,1c 35.997,0,72.003,0,108,0C 183,1,183,1,183,1z"></path>
+                            <path id="screen" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M18,67
+                                                                                                                            c87.659,0,155.341,0,245,0
+                                                                                                                            c0,116.322,0,232.678,0,399
+                                                                                                                            c-77.659,0-155.341,0-245,0
+                                                                                                                            C18,329.678,18,213.322,18,97
+                                                                                                                            z"></path>
+                            <path id="rnd1" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="
+                                                                                                                          M139,476
+                                                                                                                          c13.807,0,25,11.193,25,25
+                                                                                                                          s-11.193,25-25,25
+                                                                                                                          s-25-11.193-25-25
+                                                                                                                          S125.193,476,139,476
+                                                                                                                          z"></path>
+                            <path id="rnd" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="
+                                                                                                                         M92,21
+                                                                                                                         c3.866,0,5,3.134,5,5
+                                                                                                                         s-3.134,5-5,5
+                                                                                                                         s-5-3.134-5-5
+                                                                                                                         S88.134,21,92,21
+                                                                                                                         z"></path>
+                            <path id="din1" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="
+                                                                                                                          M111,23
+                                                                                                                          c9.666,0,29.334,0,59,0
+                                                                                                                          c0,2,0,4,0,6
+                                                                                                                          c-9.666,0-29.334,0-59,0
+                                                                                                                          C111,27,111,25,111,23
+                                                                                                                          z"></path>
+                            </svg> -->
+                    </div>
+
+                </div>
+                <div class="row full-row static-row">
+                    <div class="container">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer></footer>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-91574636-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/global.js"></script>
+
+    <script>
+        setTimeout(function(){
+
+            $('#svg-phone_1').addClass('active')
+        },600)
+    </script>
+</body>
+</html>
