@@ -29,7 +29,7 @@ define('DB_USER', '2290934_bhamsitesblog');
 define('DB_PASSWORD', 'Bh@mS!t35BL0g');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'pdb14.awardspace.net');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
