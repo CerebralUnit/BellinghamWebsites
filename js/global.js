@@ -3,6 +3,8 @@ if ( window.location.hash ) scroll(0,0);
 // void some browsers issue
 setTimeout( function() { scroll(0,0); }, 1);
 
+var $ = $ || jQuery;
+
 $(function() {
 
     // your current click function
@@ -78,7 +80,7 @@ $('.send-btn').click(function(e){
             }
             $('.loader').show();
     if(validateForm()){
-        
+
         $('.contact-form').slideUp(250);
         $('.hire-form-form').submit();
     }else{
@@ -87,7 +89,7 @@ $('.send-btn').click(function(e){
 })
 $('.hire-form-form').submit(function(e){
     e.preventDefault();
-    
+
 
     $.ajax({
         url: 'http://formspree.io/dev.brianlee@gmail.com',
@@ -95,15 +97,15 @@ $('.hire-form-form').submit(function(e){
         data: $(this).serialize(),
         dataType: 'json',
         beforeSend: function() {
-           
+
         },
         success: function(data) {
             var time = 2;
 
 
-            
+
             $('.hire-form').html('<div class="form-alert alert alert-success">Message sent! You will be redirected to the home page in <span class="timer">3</span>.</div>').slideDown(250);
-            
+
             setInterval(function(){
                 if(time > -1){
                     $('.timer').html(time);
@@ -133,7 +135,7 @@ $('.budget').change(function(){
 
     $(this).removeClass('invalid')
 })
-function validateForm(){ 
+function validateForm(){
     var name    = $('.name').val();
     var email   = $('.email').val();
     var subject = $('.subject').val();
@@ -152,7 +154,7 @@ function validateForm(){
         $('.email').addClass('invalid');
         return false;
     }
- 
+
     if(!message || message.length < 3){
         $('.message').addClass('invalid');
         return false;

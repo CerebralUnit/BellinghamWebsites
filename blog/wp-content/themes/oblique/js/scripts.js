@@ -1,12 +1,12 @@
 
 //Parallax
 jQuery(function($) {
-	$('.site-header').parallax('50%', 0.3);
+//$('.site-header').parallax('50%', 0.3);
 });
 
 //Fit Vids
 jQuery(function($) {
-    $('body').fitVids();
+   // $('body').fitVids();
 });
 
 //Open social links in a new tab
@@ -23,17 +23,17 @@ jQuery(function($) {
 	});
 	$('.sidebar-toggle-inside').click(function() {
 		$('.widget-area').toggleClass('widget-area-visible');
-	});	
-});
-
-//Menu
-jQuery(function($) {
-	$('.main-navigation .menu').slicknav({
-		label: '',
-		duration: 500,
-		prependTo:'.sidebar-nav',
-		closedSymbol: '&#43;',
-		openedSymbol: '&#45;',
-		allowParentLinks: true	
 	});
 });
+
+// //Menu
+// jQuery(function($) {
+// 	$('.main-navigation .menu').slicknav({
+// 		label: '',
+// 		duration: 500,
+// 		prependTo:'.sidebar-nav',
+// 		closedSymbol: '&#43;',
+// 		openedSymbol: '&#45;',
+// 		allowParentLinks: true
+// 	});
+// });

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta:edge></meta:edge>
+    <title>404 | Page Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <style>
+    html,  body{
+        height:100%;
+    }
+        body{
+            min-height: 100%;
+            background:#000 url(img/404-rip.jpg) no-repeat right top;
+            font-family: 'Open Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .main-content{
+        width: 100%;
+        float:left;
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+        padding-top: 30px;
+        }
+        .four-oh-four{
+            text-align: center;
+    color: #009bc7;
+    font-weight: bold;
+    font-size: 200px;
+        }
+        .oh-no{
+            display:block;
+            margin:0 auto;
+            max-width: 400px;
+
+        }
+        .logo{
+            max-width: 62px;
+            display: block;
+            margin: 20px;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .logo > img{
+            max-width: 100%;
+        }
+        @media(max-width: 991px){
+            body{
+                background-size: initial;
+                background-position: top right
+            }
+  .main-content{
+
+                margin: 0  ;
+                text-align: center;
+                width:70%;
+                font-size: 26px;
+                color: #fff;
+                max-width: none;
+                height:100%;
+                /* text-align: justify; */
+                transform: rotateZ(0);
+                padding-top: 100px;
+                padding:0;
+            }
+        }
+        @media(max-width: 767px){
+            body{
+                background-size: 50%;
+                background-position: top right
+            }
+            .logo{
+                top: auto;
+                bottom: 120px;
+                left: 50%;
+                margin-left: -31px;
+            }
+            .four-oh-four{
+                text-align: center;
+                color: #009bc7;
+                font-weight: bold;
+                font-size: 120px;
+                 transform: rotateZ(-90deg);
+                 position: absolute;
+                 top: 13%;
+                 left: 25%;
+                 margin-left: -105px
+            }
+            .main-content{
+
+                margin: 0  ;
+                text-align: center;
+                width:100%;
+                font-size: 18px;
+                color: #fff;
+                max-width: none;
+                height:100%;
+                /* text-align: justify; */
+                transform: rotateZ(0);
+                padding-top: 100px;
+                padding:0;
+            }
+            .oh-no {
+                height: auto;
+                position: absolute;
+                left: 0;
+                right: 0;
+                font-size: 22px;
+                max-width: none;
+                bottom: 0;
+                    padding: 0 25px 25px;
+            }
+        }
+        @media (max-width: 374px){
+            .logo{
+                bottom:90px;
+                max-width: 40px;
+                margin-left: -20px
+            }
+            .oh-no{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="/" class="logo">
+    <img src="img/b-logo-no-sub.png" alt="">
+</a>
+    <section class="main-content">
+     <div class="four-oh-four">
+        404
+    </div>
+            <div class="oh-no">OH NO! We searched high and low, but that page doesn't seem to exist.</div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>

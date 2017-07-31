@@ -267,7 +267,13 @@ h6,
     perspective: 1000px;
     padding: 0;
     cursor: pointer;
+}
+.call-buttons {
+    width: 100%;
     overflow: hidden;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
 }
 /* Rotate the cube */
 
@@ -1576,6 +1582,7 @@ a.call-button.quote-button {
     font-family: 'Open Sans', sans-serif;
     line-height: 350px;
     margin: 40px 0 0 0;
+    white-space: nowrap;
     display: block;
 }
 #design .page-header-content h1 {
@@ -1609,6 +1616,13 @@ header h1.apps {
 .hamburger:hover {
     opacity: .7;
 }
+
+.home-top {
+    padding-top: 130px;
+    background: url(../img/header-bg.png) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .hamburger {
     position: fixed;
     top: 7px;
@@ -1627,12 +1641,6 @@ header h1.apps {
     color: inherit;
     border: 0;
     background-color: transparent;
-}
-.home-top {
-    padding-top: 130px;
-    background: url(../img/header-bg.png) center center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 .hamburger-box {
     position: relative;
@@ -2151,7 +2159,7 @@ li.offering:nth-child(12):after {
 #design .step-content:nth-child(4):after {
     border-left-color: #6d9c44;
 }
- 
+
 
 a.current {
     color: #ffd354 !important;
@@ -2489,6 +2497,13 @@ a.current {
 .content-section{
     padding:0;
 }
+.mobile-menu > li > a, .menu > li > a{
+    margin: 0 10px;
+    font-size: 16px;
+}
+.logo{
+    max-width: 42px;
+}
 #about-me .row{
     padding:0;
 }
@@ -2542,7 +2557,7 @@ a.current {
         font-size:15px;
     }
     .app-features li{
-            font-size: 11px;
+            font-size: 8px;
     }
     .page-header-content{
         width: 60%;

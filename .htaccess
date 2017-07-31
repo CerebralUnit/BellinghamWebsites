@@ -63,3 +63,6 @@ Redirect 301 /services.html /
 Redirect 301 /contact.html /
 Redirect 301 /services /
 Redirect 301 /contact /
+
+
+ErrorDocument 404 /404page.html
