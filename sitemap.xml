@@ -4,24 +4,34 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 <url>
   <loc>http://www.bellinghamwebsites.com/</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.bellinghamwebsites.com/work</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.bellinghamwebsites.com/blog/</loc>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://www.bellinghamwebsites.com/websites</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.bellinghamwebsites.com/apps</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://www.bellinghamwebsites.com/design</loc>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.bellinghamwebsites.com/blog/new-website-checklist</loc>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
